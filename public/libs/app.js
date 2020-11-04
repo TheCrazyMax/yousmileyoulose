@@ -34,7 +34,13 @@ const listOfVideoIds = [
     'rw2qviFnEKE',
     'rfOY8ePOs_0',
     '_ih-drNEOT8',
-    'UGbFh-EleSY'
+    'UGbFh-EleSY',
+    'QZShA_a-5r8',
+    'txqiwrbYGrs',
+    'GRf4ChTr6Fs',
+    'U_xoICJChu8',
+    'UqiGMsMUiGI',
+    'rzKaOp383vA'
 ]
 
 let isFirstRound = true
@@ -171,7 +177,7 @@ function startFirstRound() {
 
     document.getElementById("loading").style.display = 'none'
     document.getElementById('intermission').className = 'fadeOut'
-    
+
 
     player.playVideo()
     document.getElementById('skipVideo').style.display = 'block'
@@ -224,9 +230,9 @@ function showIntermission() {
     let smileStatusText = "Your camera is off, you not even trying to beat the game."
 
     if (isUsingCamera) {
-        if (videoSkipped){
+        if (videoSkipped) {
             videoSkipped = false
-            // player will not lose if he skips the video
+                // player will not lose if he skips the video
             currentSmileStatus = false
             smileStatusText = "You skipped the video. Don't cheat too much ;)"
             matchUiWithWinStatus()
